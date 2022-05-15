@@ -33,6 +33,978 @@ ul {
   list-style: none;
 }
 
+
+@media screen and (max-width: 768px) {
+  .home {
+    &__grid {
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    // SOCIAL
+    &__contact {
+      padding: 0.8rem 0;
+      text-align: center;
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    &__social {
+      display: flex;
+      background-color: #282828;
+      align-items: center;
+      justify-content: space-evenly;
+
+      div {
+        width: 50px;
+        height: auto;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid rgb(78, 78, 78);
+        padding: 0.8rem 0;
+
+        img {
+          width: 20px;
+          height: auto;
+        }
+      }
+
+      a {
+        text-align: center;
+        color: #dfdfdf;
+        font-size: 1rem;
+      }
+    }
+
+    // NAV
+    &__logo {
+      position: absolute;
+      width: 40%;
+      height: 60px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 120px;
+        height: auto;
+      }
+    }
+
+    &__logoAndNav {
+      position: relative;
+
+      .toggler {
+        /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+        z-index: 2;
+        height: 60px;
+        width: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        opacity: 0;
+      }
+
+      .redBG {
+        background-color: #96003a;
+        width: 60%;
+        height: 60px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+
+      .hamburger {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 40px;
+        width: 40px;
+        padding: 0.6rem;
+
+        /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+
+      .hamburger > div {
+        position: relative;
+        top: 0;
+        left: 0;
+        background: white;
+        height: 2px;
+        width: 90%;
+        transition: all 0.4s ease;
+      }
+
+      /* CREATING THE TOP AND BOTTOM LINES : 
+      TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+
+      .hamburger > div::before,
+      .hamburger > div::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        background: white;
+        width: 100%;
+        height: 2px;
+        transition: all 0.4s ease;
+      }
+
+      .hamburger > div::after {
+        top: 10px;
+      }
+
+      /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+      .toggler:checked + .hamburger > div {
+        background: rgba(0, 0, 0, 0);
+      }
+
+      .toggler:checked + .hamburger > div::before {
+        top: 0;
+        transform: rotate(45deg);
+        background: black;
+      }
+
+      /* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+      .toggler:checked + .hamburger > div::after {
+        top: 0;
+        transform: rotate(135deg);
+        background: black;
+      }
+
+      /* MAIN MENU WITH THE WHITE BACKGROUND AND THE TEXT :  */
+
+      .menu {
+        text-align: center;
+        background: #96003a;
+        width: 0%;
+
+        /* APPLYING TRANSITION TO THE MENU :  */
+
+        transition: all 0.4s ease;
+      }
+
+      /* IF THE TOGGLER IS CHECKED, THEN INCREASE THE WIDTH OF THE MENU TO 30% , CREATING A SMOOTH EFFECT :  */
+
+      .toggler:checked ~ .menu {
+        width: 100%;
+        height: 100vh;
+      }
+
+      /* STYLING THE LIST :  */
+      .menu > div > ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 150px;
+        display: none;
+        /* HIDDEN INITIALLY  :  */
+
+        visibility: hidden;
+      }
+
+      .menu > div > ul > li {
+        list-style: none;
+        padding: 2rem 0;
+      }
+
+      .menu > div > ul > li > a {
+        color: #eeeeee;
+        text-decoration: none;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .menu div ul li a img {
+        width: 25px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      /* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+
+      .toggler:checked ~ .menu > div > ul {
+        transition: visibility 0.4s ease-in;
+        transition-delay: 0.1s;
+        display: block;
+        visibility: visible;
+      }
+
+      .toggler:checked ~ .menu > div > ul > li > a:hover {
+        color: orange;
+      }
+    }
+
+    // MAIN BANNER
+    &__wrraper {
+      margin-bottom: 10rem;
+    }
+
+    &__mainBanner {
+      margin-top: 6rem;
+      background-image: url(../../Assets/images/banner2.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+
+      p:first-child {
+        color: #dfaf13;
+        margin-bottom: 0.2rem;
+      }
+
+      p {
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        color: white;
+        font-size: 1.2rem;
+        line-height: 18px;
+      }
+
+      h1 {
+        color: #dfaf13;
+        font-size: 2.5rem;
+        margin-bottom: 0.3rem;
+      }
+
+      button {
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 1rem;
+        width: 80%;
+        background-color: #3d3d3d00;
+        background-image: url(../../Assets/images/botão_banner.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        outline: none;
+        border: none;
+      }
+    }
+
+    // CARD PLACES
+    &__cardPlaces {
+      position: relative;
+    }
+
+    // FIND YOUR VEHICLE
+    &__findVehicle {
+      border-radius: 5px;
+      background-image: url(../../Assets/images/banner_busca.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      width: 100%;
+      top: -120px;
+      left: 0px;
+      color: white;
+      padding: 3rem 2rem;
+      background-color: #70042d;
+      box-shadow: 1px 2px 4px black;
+
+      h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: lighter;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    // PROPERTIES TYPES
+    &__propertiesTypes {
+      margin-bottom: 1.5rem;
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        display: flex;
+      }
+    }
+
+    // PROPERTIES TYPES ----
+    &__flexInputs {
+      display: flex;
+
+      div {
+        padding: 0.8rem;
+        background-color: white;
+        width: 40%;
+        border-radius: 0px 5px 5px 0px;
+      }
+
+      div:hover {
+        background-color: #70042d;
+        box-shadow: 1px 2px 4px black;
+      }
+
+      div:hover > strong {
+        color: rgb(240, 240, 240);
+      }
+
+      strong {
+        color: rgb(75, 75, 75);
+        text-align: center;
+        width: 100%;
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+      }
+
+      div:first-child {
+        border-right: 2px solid #96003a;
+        width: 60%;
+        border-radius: 5px 0 0 5px;
+      }
+    }
+
+    // WHERE ----
+    &__where {
+      margin-bottom: 3rem;
+
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+      }
+
+      input {
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-size: 1.2rem;
+        color: rgb(75, 75, 75);
+        letter-spacing: 0.3px;
+        font-weight: 400;
+      }
+    }
+
+    // FIND PROPERTIES ----
+    &__findProperties {
+      padding: 1rem;
+      font-size: 1.2rem;
+      color: rgb(255, 255, 255);
+      letter-spacing: 0.3px;
+      font-weight: 400;
+      border-radius: 5px;
+      border: none;
+      background-color: rgba(255, 0, 0, 0);
+      background-image: url(../../Assets/images/botão_buscaimóveis.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    // NAV FILTER
+    &__navFilter {
+      margin: 0 auto;
+      width: 95%;
+      margin-top: -8rem;
+      margin-bottom: 3rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bloks {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0;
+
+        .place {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          background-color: rgb(255, 255, 255);
+
+          border-radius: 5px 5px 5px 5px;
+          width: 50%;
+          padding: 1rem 1rem;
+
+          img {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+          }
+
+          p {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            color: #3d3d3d;
+            width: 70%;
+          }
+        }
+
+        // PLACES HOVER CONFIGS
+        .place:hover {
+          background-color: #96003a;
+          box-shadow: 1px 2px 4px black;
+        }
+
+        .place::after {
+          content: "";
+          position: absolute;
+          background-color: #d6b54c;
+          top: 38px;
+          left: 0px;
+          width: 100%;
+          height: 10%;
+          border-radius: 0 0 5px 5px;
+        }
+
+        .place:hover > p {
+          color: #dfdfdf;
+        }
+
+        .gold {
+          display: none;
+        }
+
+        .place:hover > .gold {
+          display: block;
+        }
+
+        .place:hover > .red {
+          display: none;
+        }
+
+        .place:first-child {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    // PLACES CONTAINER
+
+    
+
+    // .left{
+    //   width: 50;
+    // }
+    .rigth{}
+
+    &__placesContainer{
+      display: flex;
+    }
+
+    &__card {
+      width: 90%;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 1px 2px 4px rgb(78, 78, 78);
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    &__cardImg {
+      position: relative;
+      img {
+        border-radius: 10px 10px 0 0;
+      }
+
+      div {
+        bottom: -8px;
+        right: 10px;
+        position: absolute;
+        background-color: #990a41;
+        padding: 0.5rem 2rem;
+        color: white;
+        border-radius: 3px;
+      }
+    }
+
+    &__cardInfo {
+      padding: 2rem;
+
+      h3 {
+        font-size: 0.9rem;
+      }
+
+      .line {
+        height: 1px;
+        width: 100%;
+        background-color: #70042d;
+        margin: 1rem 0;
+      }
+
+      .flexInfo {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0.8rem;
+
+        img {
+          height: 15px;
+          width: 15px;
+          margin-right: 0.8rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      button {
+        width: 100%;
+        background-image: url(../../Assets/images/botão_consultar.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #96003900;
+        border: none;
+        margin: 1rem 0 0.5rem 0;
+        padding: 0.8rem;
+        border-radius: 5px;
+        color: #ffffff;
+        font-size: 1.3rem;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    // SEE ALL THE RELEASES
+    &__seeReleases {
+      width: 100%;
+      margin: 5rem 0;
+      button {
+        width: 100%;
+        padding: 0.9rem 0;
+        background-color: #d6b64c00;
+        background-image: url(../../Assets/images/botão_todoslançamentos.png);
+        background-position: -50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        border-radius: 5px;
+        color: #f3f3f3;
+        margin: 1rem 0;
+      }
+
+      .line {
+        height: 1px;
+        width: 50%;
+        background-color: #870031;
+        margin: 0 auto;
+      }
+    }
+
+    // CALL TO ACTION
+    &__callAction {
+      background-image: url(../../Assets/images/administration.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 0;
+      position: relative;
+
+      .background {
+        background-color: #640117b9;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      div {
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+
+        h2 {
+          color: #d6b54c;
+          letter-spacing: 0.5px;
+          font-size: 1.8rem;
+          font-weight: lighter;
+        }
+
+        p {
+          color: #e5e5e5;
+          text-align: justify;
+          margin: 2rem 0;
+          font-size: 1.2rem;
+        }
+
+        button {
+          padding: 0.5rem 2rem;
+          letter-spacing: 0.5px;
+          background-color: #d6b64c00;
+          background-image: url(../../Assets/images/botão_painellocação.png);
+          background-position: -35px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-radius: 5px;
+          border: none;
+          color: #f3f3f3;
+        }
+      }
+    }
+
+    // BLOG POSTS
+    &__blogContainer {
+      background-color: rgb(255, 255, 255);
+      padding: 5rem 0;
+    }
+
+    // NEWS CARD
+    &__newsCard {
+      margin-bottom: 3rem;
+      h2 {
+        color: #960039;
+        font-weight: 400;
+        max-width: 130px;
+        font-size: 2rem;
+      }
+
+      .newsButton {
+        padding: 0.5rem 2rem;
+        letter-spacing: 0.5px;
+        background-color: rgba(255, 0, 0, 0);
+        background-image: url(../../Assets/images/botão_todasnoticias.png);
+        background-position: -20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        border: none;
+        color: #f3f3f3;
+      }
+
+      .news {
+        p {
+          margin: 1rem 0;
+          font-size: 1.3rem;
+          text-align: justify;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+
+    // BLOG CARDS
+    &__blogCard {
+      background-color: #e5e5e5;
+      position: relative;
+      box-shadow: 1px 2px 4px rgb(110, 110, 110);
+      border-radius: 2px;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+
+      button {
+        width: 90%;
+        padding: 1rem;
+        letter-spacing: 0.5px;
+        color: #ffffff;
+        background-color: #d6b64c00;
+        background-image: url(../../Assets/images/botão_todasnoticias.png);
+        background-position: -80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: none;
+        position: absolute;
+        bottom: -15px;
+        left: 15px;
+        border-radius: 5px;
+      }
+    }
+
+    &__secondCard {
+      margin-bottom: 2rem;
+    }
+
+    &__blogCard:first-child {
+      margin-right: 1rem;
+    }
+
+    &__blogCardInfo {
+      padding: 2rem;
+
+      .line {
+        background-color: #990a41;
+        height: 1.2px;
+        margin: 1.5rem 0;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: #3d3d3d;
+      }
+
+      p {
+        font-size: 1.2rem;
+        letter-spacing: 0.2px;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    // Meet our partners
+    &__partnersContainer {
+      padding: 4rem 0;
+      height: 280px;
+    }
+
+    &__partnersGrid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    // TITLE
+    &__partnersTitle {
+      margin-bottom: 1rem;
+      h2 {
+        font-weight: lighter;
+        color: #960039;
+      }
+    }
+
+    // SLIDE
+    &__partnersSlide {
+      width: 80%;
+      position: relative;
+      display: flex;
+      justify-content: space-evenly;
+      .hidden {
+        display: none;
+      }
+
+      // CARD
+      .partnerCard {
+        background-color: #f3f3f3;
+        width: 130px;
+        height: 90px;
+        border-radius: 5px;
+        padding: 3rem 2rem;
+      }
+
+      .space {
+        margin-right: 1rem;
+      }
+    }
+
+    // ARROW
+    &__slideArrow {
+      width: 25px;
+      height: 25px;
+      background-color: #dfaf1300;
+      position: absolute;
+      right: -7px;
+      top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__slideArrow:first-child {
+      left: -7px;
+    }
+
+    // SIGN IN THE NEWSLETTER
+    &__newsLetterGrid {
+      position: absolute;
+      top: -90px;
+      left: 18px;
+      margin: 0 auto;
+    }
+
+    &__newsLetterContainer {
+      border-radius: 5px;
+      background-color: #960039;
+      background-image: url(../../Assets/images/banner_newsletter.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      color: white;
+      padding: 3rem 2rem;
+      box-shadow: 1px 2px 4px black;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        .letterIcon {
+          display: flex;
+          flex-direction: row;
+        }
+
+        img {
+          width: 25px;
+          margin-right: 2rem;
+        }
+
+        p {
+          max-width: 300px;
+          font-size: 1.3rem;
+        }
+
+        input {
+          margin: 2rem 0;
+          padding: 0.8rem 1.5rem;
+          border-radius: 3px;
+          border: none;
+          outline: none;
+          font-size: 1.2rem;
+          color: rgb(75, 75, 75);
+          letter-spacing: 0.3px;
+          font-weight: 400;
+        }
+
+        button {
+          padding: 1rem;
+          font-size: 1.2rem;
+          color: rgb(255, 255, 255);
+          letter-spacing: 0.5px;
+          font-weight: 400;
+          border-radius: 3px;
+          border: none;
+          background-color: #d6b64c00;
+          background-image: url(../../Assets/images/botão_todasnoticias.png);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+    // FOOTER
+    &__footerContainer {
+      position: relative;
+      background-color: rgb(53, 53, 53);
+      color: white;
+    }
+
+    &__footerGrid {
+      padding: 15rem 0 0 0;
+    }
+
+    &__footerWrraper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      .enterprise {
+        border-top: .5px solid #dfaf13b2;
+        border-bottom: .5px solid #dfaf13c0;
+      }
+    }
+
+    // CARDS
+    &__footerCards {
+      padding: 1.5rem;
+      width: 80%;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+      p {
+        color: rgb(211, 211, 211);
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+
+      .space {
+        margin: 1rem 0;
+      }
+
+      .bnsLogoFooter {
+        width: 80%;
+        text-align: center;
+      }
+
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+
+    // ICONS
+    &__footerIcons {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: auto;
+      }
+    }
+
+    // BLACK BEANS CREDITS
+    &__credits {
+      position: relative;
+      background-color: rgb(29, 29, 29);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem 0;
+    }
+
+    &__blackLogo {
+      width: 50%;
+      display: flex;
+      p {
+        width: 50%;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      img {
+        width: 80px;
+        height: auto;
+      }
+    }
+
+    &__toTopArrow {
+      position: absolute;
+      left: 260px;
+      top: -15px;
+
+      img{
+        width: 40px;
+      }
+    }
+  }
+
+}
+
+
 // MOBILE FIRST
 @media screen and (max-width: 414px) {
   .home {
