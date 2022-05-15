@@ -8,6 +8,8 @@
   <!-- META DESCRIPTION -->
   <!-- FIVE ICON -->
   <title>Home - BNS</title>
+  <link rel="stylesheet" href="Css/compressed/desktop.min.css">
+  <link rel="stylesheet" href="Css/compressed/tablet.min.css">
   <link rel="stylesheet" href="Css/compressed/style.min.css">
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +28,8 @@
           <p>(11) 97093-0599 • CONTATO@BNSIMOVEIS.COM.BR</p>
         </div>
 
+        <div class="home__socialBG"></div>
+
         <div class="home__social">
           <div><a href="#"><img src="Assets/icons/redessociais_youtube.png" alt="Youtube Icon"></a></div>
           <div><a href="#"><img class="facebookIcon" src="Assets/icons/redessociais_facebook.png"
@@ -33,28 +37,18 @@
           <div><a href="#"><img src="Assets/icons/redessociais_instagram.png" alt="Instagram Icon"></a></div>
           <div><a href="#"><img src="Assets/icons/redessociais_pinterest.png" alt="Pinterest Icon"></a></div>
           <div><a href="#"><img src="Assets/icons/redessociais_twitter.png" alt="Twitter Icon"></a></div>
-          <a href="">PAINEL DE LOCAÇÃO</a>
+          <a class="space" href="">PAINEL DE LOCAÇÃO</a>
         </div>
 
       </div>
-  </div>
+      <!-- // NAV -->
+      <div class="home__logoAndNav">
 
+        <div class="home__logo">
+          <img src="Assets/images/logo_1.png" alt="">
+        </div>
 
-  <div class="home__logoAndNav">
-
-    <div class="home__logo">
-      <img src="Assets/images/logo_1.png" alt="">
-    </div>
-
-    <div class="redBG"></div>
-
-    <div class="home__nav">
-      <input type="checkbox" class="toggler">
-      <div class="hamburger">
-        <div></div>
-      </div>
-      <div class="menu">
-        <div>
+        <div class="home__nav home__showTablet">
           <ul>
             <li><a href='#'><img src="Assets/icons/menu_portal.png" alt="Icone portal">PORTAL DO CLIENTE</a></li>
             <li><a href='#'><img src="Assets/icons/menu_contato.png" alt="Icone contato">CONTATO</a></li>
@@ -62,480 +56,505 @@
             <li><a href='#'><img src="Assets/icons/menu_menu.png" alt="Icone Menu">MENU</a></li>
           </ul>
         </div>
+
+        <div class="home__showMobile">
+          <div class="redBG"></div>
+
+          <div class="home__nav">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger">
+              <div></div>
+            </div>
+            <div class="menu">
+              <div>
+                <ul>
+                  <li><a href='#'><img src="Assets/icons/menu_portal.png" alt="Icone portal">PORTAL DO CLIENTE</a></li>
+                  <li><a href='#'><img src="Assets/icons/menu_contato.png" alt="Icone contato">CONTATO</a></li>
+                  <li><a href='#'><img src="Assets/icons/menu_busca.png" alt="Icone Busca">BUSCA</a></li>
+                  <li><a href='#'><img src="Assets/icons/menu_menu.png" alt="Icone Menu">MENU</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </div>
+    </header>
 
-  </header>
-
-  <!-- Main banner -->
-  <section class="home__mainBanner">
-    <div class="home__grid">
-      <div class="home__wrraper">
-        <p>EMPREENDIMENTO</p>
-        <h1>LOREM IPSUM</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat.</p>
-        <button>VER EMPREENDIMENTO</button>
+    <!-- Main banner -->
+    <section class="home__mainBanner">
+      <div class="home__grid">
+        <div class="home__wrraper">
+          <p>EMPREENDIMENTO</p>
+          <h1>LOREM IPSUM</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+          <button>VER EMPREENDIMENTO</button>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <div class="home__grid">
-
+    </section>
 
     <!-- Card places (Main section)-->
-    <main class="home__cardPlaces">
-
-      <!-- Find your vehicle -->
-      <div class="home__findVehicle">
-
-        <h2><strong>ENCONTRE</strong> SEU IMÓVEL</h2>
-
-        <div>
-          <!-- // CONTACT ICON -->
-          <div class="home__contactIcon">
-            <img src="" alt="">
-          </div>
-
-          <!-- // PROPERTIES TYPES -->
-          <div class="home__propertiesTypes">
-            <h3>TIPO DE IMOVEIS</h3>
-            <div class="home__flexInputs">
-              <div><strong>Apartamento</strong></div>
-              <div><strong>Studio</strong></div>
-            </div>
-          </div>
-
-          <!-- // WHERE -->
-          <div class="home__where">
-            <h3>ONDE?</h3>
-            <input type="text" placeholder="Busque por nome, bairro ou cidade">
-          </div>
-
-          <!-- // FIND PROPERTIES -->
-          <button class="home__findProperties">
-            <strong>Buscar imóvel</strong>
-            <img src="" alt="">
-          </button>
-        </div>
-      </div>
-
-      <!-- // NAV FILTER -->
-      <div class="home__navFilter">
-
-        <div class="bloks">
-          <div class="place">
-            <img class="red" src="Assets/icons/imóveis_1b.png" alt="Icone lançamentos">
-            <img class="gold" src="Assets/icons/imóveis_1a.png" alt="Icone lançamentos">
-            <p>LANÇAMENTOS</p>
-          </div>
-          <div class="place">
-            <img class="red" src="Assets/icons/imóveis_2b.png" alt="Icone construção">
-            <img class="gold" src="Assets/icons/imóveis_2a.png" alt="Icone construção">
-            <p>EM CONSTRUÇÃO</p>
-          </div>
-        </div>
-
-        <div class="bloks">
-          <div class="place">
-            <img class="red" src="Assets/icons/imóveis_3b.png" alt="Icone pronto para morar">
-            <img class="gold" src="Assets/icons/imóveis_3a.png" alt="Icone pronto para morar">
-            <p>PRONTO PRA MORAR</p>
-          </div>
-
-          <div class="place">
-            <img class="red" src="Assets/icons/imóveis_4b.png" alt="Icone lançamento">
-            <img class="gold" src="Assets/icons/imóveis_4a.png" alt="Icone lançamento">
-            <p>BREVE LANÇAMENTO</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- // PLACES CONTAINER -->
-      <div class="home__placesContainer">
-
-        <div class="home__card">
-          <!-- // CARD IMG -->
-          <div class="home__cardImg">
-            <img src="Assets/images/img1.webp" alt="MainIMG">
-            <div>LANÇAMENTO</div>
-          </div>
-
-          <!-- // CARD INFO -->
-          <div class="home__cardInfo">
-            <h3>LOREM IPSUM</h3>
-            <div class="line"></div>
-
-            <div class="flexInfo">
-              <img src="Assets/icons/info1.png" alt="Localização icone">
-              <p>Campestre - Santo André - SP</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
-              <p>78 m²</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info3.png" alt="Icone cama">
-              <p>2 Dormitórios</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info4.png" alt="Icone vagas">
-              <p>2 vagas</p>
-            </div>
-
-            <!-- // CARD BUTTON -->
-            <button>CONSULTAR</button>
-          </div>
-        </div>
-
-        <div class="home__card">
-          <!-- // CARD IMG -->
-          <div class="home__cardImg">
-            <img src="Assets/images/img2.webp" alt="Mainimg">
-            <div>LANÇAMENTO</div>
-          </div>
-
-          <!-- // CARD INFO -->
-          <div class="home__cardInfo">
-            <h3>LOREM IPSUM</h3>
-            <div class="line"></div>
-
-            <div class="flexInfo">
-              <img src="Assets/icons/info1.png" alt="Localização icone">
-              <p>Campestre - Santo André - SP</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
-              <p>78 m²</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info3.png" alt="Icone cama">
-              <p>2 Dormitórios</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info4.png" alt="Icone vagas">
-              <p>2 vagas</p>
-            </div>
-
-            <!-- // CARD BUTTON -->
-            <button>CONSULTAR</button>
-          </div>
-        </div>
-
-        <div class="home__card">
-          <!-- // CARD IMG -->
-          <div class="home__cardImg">
-            <img src="Assets/images/img3.webp" alt="">
-            <div>LANÇAMENTO</div>
-          </div>
-
-          <!-- // CARD INFO -->
-          <div class="home__cardInfo">
-            <h3>LOREM IPSUM</h3>
-            <div class="line"></div>
-
-            <div class="flexInfo">
-              <img src="Assets/icons/info1.png" alt="Localização icone">
-              <p>Campestre - Santo André - SP</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
-              <p>78 m²</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info3.png" alt="Icone cama">
-              <p>2 Dormitórios</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info4.png" alt="Icone vagas">
-              <p>2 vagas</p>
-            </div>
-
-            <!-- // CARD BUTTON -->
-            <button>CONSULTAR</button>
-          </div>
-        </div>
-
-        <div class="home__card">
-          <!-- // CARD IMG -->
-          <div class="home__cardImg">
-            <img src="Assets/images/img1.webp" alt="">
-            <div>LANÇAMENTO</div>
-          </div>
-
-          <!-- // CARD INFO -->
-          <div class="home__cardInfo">
-            <h3>LOREM IPSUM</h3>
-            <div class="line"></div>
-
-            <div class="flexInfo">
-              <img src="Assets/icons/info1.png" alt="Localização icone">
-              <p>Campestre - Santo André - SP</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
-              <p>78 m²</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info3.png" alt="Icone cama">
-              <p>2 Dormitórios</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info4.png" alt="Icone vagas">
-              <p>2 vagas</p>
-            </div>
-
-            <!-- // CARD BUTTON -->
-            <button>CONSULTAR</button>
-          </div>
-        </div>
-
-        <div class="home__card">
-          <!-- // CARD IMG -->
-          <div class="home__cardImg">
-            <img src="Assets/images/img2.webp" alt="">
-            <div>LANÇAMENTO</div>
-          </div>
-
-          <!-- // CARD INFO -->
-          <div class="home__cardInfo">
-            <h3>LOREM IPSUM</h3>
-            <div class="line"></div>
-
-            <div class="flexInfo">
-              <img src="Assets/icons/info1.png" alt="Localização icone">
-              <p>Campestre - Santo André - SP</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
-              <p>78 m²</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info3.png" alt="Icone cama">
-              <p>2 Dormitórios</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info4.png" alt="Icone vagas">
-              <p>2 vagas</p>
-            </div>
-
-            <!-- // CARD BUTTON -->
-            <button>CONSULTAR</button>
-          </div>
-        </div>
-
-        <div class="home__card">
-          <!-- // CARD IMG -->
-          <div class="home__cardImg">
-            <img src="Assets/images/img3.webp" alt="">
-            <div>LANÇAMENTO</div>
-          </div>
-
-          <!-- // CARD INFO -->
-          <div class="home__cardInfo">
-            <h3>LOREM IPSUM</h3>
-            <div class="line"></div>
-
-            <div class="flexInfo">
-              <img src="Assets/icons/info1.png" alt="Localização icone">
-              <p>Campestre - Santo André - SP</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
-              <p>78 m²</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info3.png" alt="Icone cama">
-              <p>2 Dormitórios</p>
-            </div>
-            <div class="flexInfo">
-              <img src="Assets/icons/info4.png" alt="Icone vagas">
-              <p>2 vagas</p>
-            </div>
-
-            <!-- // CARD BUTTON -->
-            <button>CONSULTAR</button>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <div class="home__grid">
-    <!-- // SEE ALL THE RELEASES -->
-    <div class="home__seeReleases">
-      <div class="line"></div>
-      <button>
-        VER TODOS OS LANÇAMENTOS
-      </button>
-      <div class="line"></div>
-    </div>
-  </div>
-  </main>
-
-  <!-- Call to action -->
-  <section class="home__callAction">
-    <div class="background"></div>
-    <div>
-      <h2><strong>ADMINISTRAÇÃO</strong> DE IMÓVEIS</h2>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-        ea commodo consequat."</p>
-      <button>PAINEL DE LOCAÇÃO</button>
-    </div>
-  </section>
-
-  <!-- Blog posts -->
-  <article class="home__blogContainer">
     <div class="home__grid">
+      <main class="home__cardPlaces">
 
-      <div class="home__newsCard">
-        <!-- // CARD INFO -->
-        <div class="news">
-          <h2>ACESSE NOSSO <strong>BLOG</strong></h2>
-          <p>"Visite nosso Blog e fique por dentro das novidades, lançamentos e notícias de relevãncia do mundo
-            imobiliário."</p>
+        <!-- Find your vehicle -->
+        <div class="home__findVehicle">
+          <h2><strong>ENCONTRE</strong> SEU IMÓVEL</h2>
+
+          <div class="flex">
+            <!-- // CONTACT ICON -->
+            <!-- <div class="home__contactIcon">
+              <img src="" alt="">
+            </div> -->
+
+            <!-- // PROPERTIES TYPES -->
+            <div class="home__propertiesTypes">
+              <h3>TIPO DE IMOVEIS</h3>
+              <div class="home__flexInputs">
+                <div><strong>Apartamento</strong></div>
+                <div><strong>Studio</strong></div>
+              </div>
+            </div>
+
+            <!-- // WHERE -->
+            <div class="home__where">
+              <h3>ONDE?</h3>
+              <input type="text" placeholder="Busque por nome, bairro ou cidade">
+            </div>
+
+            <!-- // FIND PROPERTIES -->
+            <button class="home__findProperties">
+              <strong>Buscar imóvel</strong>
+              <img src="Assets/icons/menu_busca.png" alt="Icon busca">
+            </button>
+          </div>
         </div>
 
-        <!-- // CARD BUTTON -->
-        <button class="newsButton">ACESSE TODAS AS NOTÍCIAS</button>
-      </div>
+        <!-- // NAV FILTER -->
+        <div class="home__navFilter">
 
+          <div class="bloks">
+            <div class="place">
+              <img class="red" src="Assets/icons/imóveis_1b.png" alt="Icone lançamentos">
+              <img class="gold" src="Assets/icons/imóveis_1a.png" alt="Icone lançamentos">
+              <p>LANÇAMENTOS</p>
+            </div>
+            <div class="place">
+              <img class="red" src="Assets/icons/imóveis_2b.png" alt="Icone construção">
+              <img class="gold" src="Assets/icons/imóveis_2a.png" alt="Icone construção">
+              <p>EM CONSTRUÇÃO</p>
+            </div>
+          </div>
 
-      <div class="home__blogCard">
-        <!-- // CARD IMG -->
-        <div class="home__blogCardImg">
-          <img src="/Assets/images/img1.webp" alt="Card Banner">
+          <div class="bloks">
+            <div class="place">
+              <img class="red" src="Assets/icons/imóveis_3b.png" alt="Icone pronto para morar">
+              <img class="gold" src="Assets/icons/imóveis_3a.png" alt="Icone pronto para morar">
+              <p>PRONTO PRA MORAR</p>
+            </div>
+
+            <div class="place">
+              <img class="red" src="Assets/icons/imóveis_4b.png" alt="Icone lançamento">
+              <img class="gold" src="Assets/icons/imóveis_4a.png" alt="Icone lançamento">
+              <p>BREVE LANÇAMENTO</p>
+            </div>
+          </div>
+
         </div>
 
-        <!-- // CARD INFO -->
-        <div class="home__blogCardInfo">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</h3>
-          <div class="line"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua...</p>
+        <!-- // PLACES CONTAINER -->
+        <div class="home__placesContainer">
+          <div class="left">
+            <div class="home__card">
+              <!-- // CARD IMG -->
+              <div class="home__cardImg">
+                <img src="Assets/images/img1.webp" alt="MainIMG">
+                <div>LANÇAMENTO</div>
+              </div>
+
+              <!-- // CARD INFO -->
+              <div class="home__cardInfo">
+                <h3>LOREM IPSUM</h3>
+                <div class="line"></div>
+
+                <div class="flexInfo">
+                  <img src="Assets/icons/info1.png" alt="Localização icone">
+                  <p>Campestre - Santo André - SP</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
+                  <p>78 m²</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info3.png" alt="Icone cama">
+                  <p>2 Dormitórios</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info4.png" alt="Icone vagas">
+                  <p>2 vagas</p>
+                </div>
+
+                <!-- // CARD BUTTON -->
+                <button>CONSULTAR</button>
+              </div>
+            </div>
+
+            <div class="home__card">
+              <!-- // CARD IMG -->
+              <div class="home__cardImg">
+                <img src="Assets/images/img2.webp" alt="Mainimg">
+                <div>LANÇAMENTO</div>
+              </div>
+
+              <!-- // CARD INFO -->
+              <div class="home__cardInfo">
+                <h3>LOREM IPSUM</h3>
+                <div class="line"></div>
+
+                <div class="flexInfo">
+                  <img src="Assets/icons/info1.png" alt="Localização icone">
+                  <p>Campestre - Santo André - SP</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
+                  <p>78 m²</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info3.png" alt="Icone cama">
+                  <p>2 Dormitórios</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info4.png" alt="Icone vagas">
+                  <p>2 vagas</p>
+                </div>
+
+                <!-- // CARD BUTTON -->
+                <button>CONSULTAR</button>
+              </div>
+            </div>
+
+            <div class="home__card">
+              <!-- // CARD IMG -->
+              <div class="home__cardImg">
+                <img src="Assets/images/img3.webp" alt="">
+                <div>LANÇAMENTO</div>
+              </div>
+
+              <!-- // CARD INFO -->
+              <div class="home__cardInfo">
+                <h3>LOREM IPSUM</h3>
+                <div class="line"></div>
+
+                <div class="flexInfo">
+                  <img src="Assets/icons/info1.png" alt="Localização icone">
+                  <p>Campestre - Santo André - SP</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
+                  <p>78 m²</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info3.png" alt="Icone cama">
+                  <p>2 Dormitórios</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info4.png" alt="Icone vagas">
+                  <p>2 vagas</p>
+                </div>
+
+                <!-- // CARD BUTTON -->
+                <button>CONSULTAR</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="rigth">
+            <div class="home__card">
+              <!-- // CARD IMG -->
+              <div class="home__cardImg">
+                <img src="Assets/images/img1.webp" alt="">
+                <div>LANÇAMENTO</div>
+              </div>
+
+              <!-- // CARD INFO -->
+              <div class="home__cardInfo">
+                <h3>LOREM IPSUM</h3>
+                <div class="line"></div>
+
+                <div class="flexInfo">
+                  <img src="Assets/icons/info1.png" alt="Localização icone">
+                  <p>Campestre - Santo André - SP</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
+                  <p>78 m²</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info3.png" alt="Icone cama">
+                  <p>2 Dormitórios</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info4.png" alt="Icone vagas">
+                  <p>2 vagas</p>
+                </div>
+
+                <!-- // CARD BUTTON -->
+                <button>CONSULTAR</button>
+              </div>
+            </div>
+
+            <div class="home__card">
+              <!-- // CARD IMG -->
+              <div class="home__cardImg">
+                <img src="Assets/images/img2.webp" alt="">
+                <div>LANÇAMENTO</div>
+              </div>
+
+              <!-- // CARD INFO -->
+              <div class="home__cardInfo">
+                <h3>LOREM IPSUM</h3>
+                <div class="line"></div>
+
+                <div class="flexInfo">
+                  <img src="Assets/icons/info1.png" alt="Localização icone">
+                  <p>Campestre - Santo André - SP</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
+                  <p>78 m²</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info3.png" alt="Icone cama">
+                  <p>2 Dormitórios</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info4.png" alt="Icone vagas">
+                  <p>2 vagas</p>
+                </div>
+
+                <!-- // CARD BUTTON -->
+                <button>CONSULTAR</button>
+              </div>
+            </div>
+
+            <div class="home__card">
+              <!-- // CARD IMG -->
+              <div class="home__cardImg">
+                <img src="Assets/images/img3.webp" alt="">
+                <div>LANÇAMENTO</div>
+              </div>
+
+              <!-- // CARD INFO -->
+              <div class="home__cardInfo">
+                <h3>LOREM IPSUM</h3>
+                <div class="line"></div>
+
+                <div class="flexInfo">
+                  <img src="Assets/icons/info1.png" alt="Localização icone">
+                  <p>Campestre - Santo André - SP</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info2.png" alt="Icone metros quadrados">
+                  <p>78 m²</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info3.png" alt="Icone cama">
+                  <p>2 Dormitórios</p>
+                </div>
+                <div class="flexInfo">
+                  <img src="Assets/icons/info4.png" alt="Icone vagas">
+                  <p>2 vagas</p>
+                </div>
+
+                <!-- // CARD BUTTON -->
+                <button>CONSULTAR</button>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- // CARD BUTTON -->
-        <button>LEIA MAIS</button>
-      </div>
-
-      <div class="home__blogCard home__secondCard">
-        <!-- // CARD IMG -->
-        <div class="home__blogCardImg">
-          <img src="/Assets/images/img2.webp" alt="Card Banner">
-        </div>
-
-        <!-- // CARD INFO -->
-        <div class="home__blogCardInfo">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</h3>
-          <div class="line"></div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua...</p>
-        </div>
-
-        <!-- // CARD BUTTON -->
-        <button>LEIA MAIS</button>
-      </div>
-
-
     </div>
-  </article>
 
-
-  <!-- Meet our partners -->
-  <section class="home__partnersContainer">
-    <div class="home__grid home__partnersGrid">
-      <div class="home__partnersTitle">
-        <h2>CONHEÇA <strong>NOSSOS PARCEIROS</strong></h2>
-      </div>
-
-      <!-- // PARTNERS SLIDES -->
-      <div class="home__partnersSlide">
-        <div class="home__slideArrow"><img src="Assets/icons/Arrows.png" alt="Arrow icon"></div>
-        <div class="partnerCard space"><img src="Assets/images/logo_1.png" alt="logo"></div>
-        <div class="partnerCard"><img src="Assets/images/logo_1.png" alt="logo"></div>
-        <div class="hidden partnerCard"><img src="Assets/images/logo_2.png" alt="logo"></div>
-        <div class="hidden partnerCard"><img src="Assets/images/logo_2.png" alt="logo"></div>
-        <div class="home__slideArrow"><img style="transform: rotate(180deg);" src="Assets/icons/Arrows.png"
-            alt="Arrow icon"></div>
+    <div class="home__grid">
+      <!-- // SEE ALL THE RELEASES -->
+      <div class="home__seeReleases">
+        <div class="line"></div>
+        <button>
+          VER TODOS OS LANÇAMENTOS
+        </button>
+        <div class="line"></div>
       </div>
     </div>
-  </section>
+    </main>
 
-  <!-- Footer -->
-  <footer class="home__footerContainer">
+    <!-- Call to action -->
+    <section class="home__callAction">
+      <div class="background"></div>
+      <div>
+        <h2><strong>ADMINISTRAÇÃO</strong> DE IMÓVEIS</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat."</p>
+        <button>PAINEL DE LOCAÇÃO</button>
+      </div>
+    </section>
 
-    <div class="home__grid home__newsLetterGrid">
+    <!-- Blog posts -->
+    <article class="home__blogContainer">
+
+      <div class="home__grid home__blogGrid">
+        <div class="blogBackground"><img src="Assets/images/blog.png" alt="blog background"></div>
+
+        <!-- // NEWS CARD -->
+        <div class="home__newsCard">
+          <!-- // CARD INFO -->
+          <div class="news">
+            <h2>ACESSE NOSSO <strong>BLOG</strong></h2>
+            <p>"Visite nosso Blog e fique por dentro das novidades, lançamentos e notícias de relevãncia do mundo
+              imobiliário."</p>
+          </div>
+
+          <!-- // CARD BUTTON -->
+          <button class="newsButton">ACESSE TODAS AS NOTÍCIAS</button>
+        </div>
+
+        <div class="home__flexBlogCards">
+          <!-- FIRST CARD -->
+          <div class="home__blogCard">
+            <!-- // CARD IMG -->
+            <div class="home__blogCardImg">
+              <img src="/Assets/images/img1.webp" alt="Card Banner">
+            </div>
+
+            <!-- // CARD INFO -->
+            <div class="home__blogCardInfo">
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</h3>
+              <div class="line"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua...</p>
+            </div>
+
+            <!-- // CARD BUTTON -->
+            <button>LEIA MAIS</button>
+          </div>
+
+          <!-- SECOND CARD -->
+          <div class="home__blogCard home__secondCard">
+            <!-- // CARD IMG -->
+            <div class="home__blogCardImg">
+              <img src="/Assets/images/img2.webp" alt="Card Banner">
+            </div>
+
+            <!-- // CARD INFO -->
+            <div class="home__blogCardInfo">
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</h3>
+              <div class="line"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua...</p>
+            </div>
+
+            <!-- // CARD BUTTON -->
+            <button>LEIA MAIS</button>
+          </div>
+        </div>
+
+
+      </div>
+    </article>
+
+    <!-- Meet our partners -->
+    <section class="home__partnersContainer">
+      <div class="home__grid home__partnersGrid">
+        <!-- // TITLE -->
+        <div class="home__partnersTitle">
+          <h2>CONHEÇA <strong>NOSSOS PARCEIROS</strong></h2>
+        </div>
+
+        <!-- // PARTNERS SLIDES -->
+        <div class="home__partnersSlide">
+          <div class="home__slideArrow"><img src="Assets/icons/Arrows.png" alt="Arrow icon"></div>
+          <div class="partnerCard space"><img src="Assets/images/logo_1.png" alt="logo"></div>
+          <div class="partnerCard"><img src="Assets/images/logo_1.png" alt="logo"></div>
+          <div class="hidden tablet partnerCard"><img src="Assets/images/logo_1.png" alt="logo"></div>
+          <div class="hidden partnerCard"><img src="Assets/images/logo_1.png" alt="logo"></div>
+          <div class="home__slideArrow"><img style="transform: rotate(180deg);" src="Assets/icons/Arrows.png"
+              alt="Arrow icon"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="home__footerContainer">
+
       <!-- Sign in the Newsletter -->
-      <div class="home__newsLetterContainer">
-        <div>
-          <div class="letterIcon">
-            <img src="Assets/icons/newsletter.png" alt="icon">
-            <p><strong>ASSINE A NEWSLETTER</strong> E RECEBA NOSSAS INFORMAÇÕES E NOTÍCIAS</p>
-          </div>
-          <input type="text" placeholder="Insira seu e-mail">
-          <button>CADASTRAR</button>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="home__grid home__footerGrid">
-      <div class="home__footerWrraper">
-        <!-- // LOGO AND SOCIAL ICONS -->
-        <div class="home__footerCards">
-          <img class="bnsLogoFooter" src="Assets/images/logo_2.png" alt="Logo">
-          <div class="home__footerIcons">
-            <div><a href="#"><img src="Assets/icons/redessociais_youtube.png" alt="Youtube icon"></a></div>
-            <div><a href="#"><img src="Assets/icons/redessociais_facebook.png" alt="Facebook icon"></a></div>
-            <div><a href="#"><img src="Assets/icons/redessociais_instagram.png" alt="Instagram icon"></a></div>
-            <div><a href="#"><img src="Assets/icons/redessociais_pinterest.png" alt="Pinterest icon"></a></div>
-            <div><a href="#"><img src="Assets/icons/redessociais_twitter.png" alt="Twitter icon"></a></div>
+      <div class="home__grid home__newsLetterGrid">
+        <div class="home__newsLetterContainer">
+          <div>
+            <div class="letterIcon">
+              <img src="Assets/icons/newsletter.png" alt="icon">
+              <p><strong>ASSINE A NEWSLETTER</strong> E RECEBA NOSSAS INFORMAÇÕES E NOTÍCIAS</p>
+            </div>
+            <input type="text" placeholder="Insira seu e-mail">
+            <button>CADASTRAR</button>
           </div>
         </div>
-
-        <!-- // ADRESS -->
-        <div class="home__footerCards">
-          <p>ALameda Terracota 185, conj 1420 São Caetano do Sul - São Paulo - SP</p>
-          <p class="space">(11)4225-5900 • (11)97093-0593 contato@bnsimoveis.com.br</p>
-          <p>Horário de Atendimento: 8h00 - 17h00</p>
-        </div>
-
-        <!-- // ENTERPRISES -->
-        <div class="home__footerCards enterprise">
-          <h3>ENTERPRISES</h3>
-          <p>Lançamentos</p>
-          <p>Em construção</p>
-          <p>Pronto para morar</p>
-          <p>Breve Lançamento</p>
-        </div>
-
-        <!-- // INSTITUTIONAL -->
-        <div class="home__footerCards">
-          <h3>INSTITUTIONAL</h3>
-          <p>Sobre a BNS</p>
-          <p>Blog</p>
-          <p>Trabalhe conosco</p>
-          <p>Política de privacidade</p>
-        </div>
       </div>
 
-      <!-- // BLACK BEANS CREDITS  -->
-      <div class="home__credits">
-        <div class="home__blackLogo">
-          <p>BNS Imóveis © • </p>
-          <img class="home__blackBeansLogo" src="Assets/images/[Black Beans] Horizontal Branco.png" alt="icon">
+      <!-- FOOTER CONTAINER -->
+      <div class="home__grid home__footerGrid">
+        <div class="home__footerWrraper">
+          <!-- // LOGO AND SOCIAL ICONS -->
+          <div class="home__footerCards logo">
+            <img class="bnsLogoFooter" src="Assets/images/logo_2.png" alt="Logo">
+            <div class="home__footerIcons">
+              <div><a href="#"><img src="Assets/icons/redessociais_youtube.png" alt="Youtube icon"></a></div>
+              <div><a href="#"><img src="Assets/icons/redessociais_facebook.png" alt="Facebook icon"></a></div>
+              <div><a href="#"><img src="Assets/icons/redessociais_instagram.png" alt="Instagram icon"></a></div>
+              <div><a href="#"><img src="Assets/icons/redessociais_pinterest.png" alt="Pinterest icon"></a></div>
+              <div><a href="#"><img src="Assets/icons/redessociais_twitter.png" alt="Twitter icon"></a></div>
+            </div>
+          </div>
+
+          <!-- // ADRESS -->
+          <div class="home__footerCards space line">
+            <p>ALameda Terracota 185, conj 1420 São Caetano do Sul - São Paulo - SP</p>
+            <p class="space">(11)4225-5900 • (11)97093-0593 contato@bnsimoveis.com.br</p>
+            <p>Horário de Atendimento: 8h00 - 17h00</p>
+          </div>
+
+          <!-- // ENTERPRISES -->
+          <div class="home__footerCards space line">
+            <h3>ENTERPRISES</h3>
+            <p>Lançamentos</p>
+            <p>Em construção</p>
+            <p>Pronto para morar</p>
+            <p>Breve Lançamento</p>
+          </div>
+
+          <!-- // INSTITUTIONAL -->
+          <div class="home__footerCards space line">
+            <h3>INSTITUTIONAL</h3>
+            <p>Sobre a BNS</p>
+            <p>Blog</p>
+            <p>Trabalhe conosco</p>
+            <p>Política de privacidade</p>
+          </div>
         </div>
 
-        <div class="home__toTopArrow">
-          <img style="transform: rotate(90deg);" src="Assets/icons/Arrows.png" alt="icon">
+        <!-- // BLACK BEANS CREDITS  -->
+        <div class="home__credits">
+          <div class="home__blackLogo">
+            <p>BNS Imóveis © • </p>
+            <img class="home__blackBeansLogo" src="Assets/images/[Black Beans] Horizontal Branco.png" alt="icon">
+          </div>
+
+          <div class="home__toTopArrow">
+            <img style="transform: rotate(90deg);" src="Assets/icons/Arrows.png" alt="icon">
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
   </div>
 </body>

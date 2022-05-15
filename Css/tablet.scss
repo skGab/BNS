@@ -1,62 +1,32 @@
-*,
-x::before,
-x::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  -webkit-tap-highlight-color: transparent;
-  font-family: "Roboto", sans-serif;
-}
-
-html,
-body {
-  height: 100vh;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  background-color: #e5e5e5;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
 // MOBILE FIRST
-@media screen and (max-width: 550px) {
-
-  html{
-    font-size: 62.5%;
+@media screen and (max-width: 875px) and (min-width: 551px) {
+  html {
+    font-size: 75.5%;
   }
 
   .home {
     &__grid {
       margin: 0 auto;
+      max-width: 750px;
       width: 90%;
     }
 
     // SOCIAL
-    &__showTablet {
+    &__showMobile {
       display: none;
     }
 
-    .showMobile{
-      display: block;
+    &__contactAndSocial {
+      display: flex;
     }
 
     &__contact {
-      padding: 0.8rem 0;
+      width: 50%;
+      padding: 0.8rem 1.5rem;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
 
       p {
         font-size: 1rem;
@@ -64,6 +34,7 @@ ul {
     }
 
     &__social {
+      width: 50%;
       display: flex;
       background-color: #282828;
       align-items: center;
@@ -94,9 +65,7 @@ ul {
 
     // NAV
     &__logo {
-      position: absolute;
       width: 40%;
-      height: 60px;
       background-color: white;
       display: flex;
       align-items: center;
@@ -108,8 +77,34 @@ ul {
       }
     }
 
+    &__nav {
+      width: 100%;
+      background-color: #96003a;
+      padding: 1.5rem 0.5rem;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li {
+          a {
+            width: min-content;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+
+            img {
+              width: 25px;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
     &__logoAndNav {
       position: relative;
+      display: flex;
 
       .toggler {
         /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
@@ -118,7 +113,7 @@ ul {
         width: 50px;
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 35px;
         cursor: pointer;
         opacity: 0;
       }
@@ -135,7 +130,7 @@ ul {
       .hamburger {
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 35px;
         height: 40px;
         width: 40px;
         padding: 0.6rem;
@@ -160,7 +155,7 @@ ul {
       }
 
       /* CREATING THE TOP AND BOTTOM LINES : 
-      TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+        TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 
       .hamburger > div::before,
       .hamburger > div::after {
@@ -265,10 +260,10 @@ ul {
     // MAIN BANNER
     &__wrraper {
       margin-bottom: 10rem;
+      max-width: 450px;
     }
 
     &__mainBanner {
-      margin-top: 6rem;
       background-image: url(../../Assets/images/banner2.png);
       background-position: center;
       background-size: cover;
@@ -422,7 +417,7 @@ ul {
     // FIND PROPERTIES ----
     &__findProperties {
       padding: 1rem;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: rgb(255, 255, 255);
       letter-spacing: 0.3px;
       font-weight: 400;
@@ -438,10 +433,9 @@ ul {
       justify-content: center;
 
       img{
-        width: 25px;
+        width: 30px;
         margin-left: 1rem;
       }
-      
     }
 
     // NAV FILTER
@@ -472,7 +466,7 @@ ul {
           padding: 1rem 1rem;
 
           img {
-            width: 20px;
+            width: 40px;
             height: auto;
             margin-right: 5px;
           }
@@ -498,7 +492,7 @@ ul {
           content: "";
           position: absolute;
           background-color: #d6b54c;
-          top: 38px;
+          top: 60px;
           left: 0px;
           width: 100%;
           height: 10%;
@@ -528,8 +522,13 @@ ul {
     }
 
     // PLACES CONTAINER
+
+    &__placesContainer {
+      display: flex;
+    }
+
     &__card {
-      width: 90%;
+      width: 95%;
       border-radius: 10px;
       background-color: #ffffff;
       box-shadow: 1px 2px 4px rgb(78, 78, 78);
@@ -581,7 +580,7 @@ ul {
         }
 
         p {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
       }
 
@@ -597,7 +596,7 @@ ul {
         padding: 0.8rem;
         border-radius: 5px;
         color: #ffffff;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         letter-spacing: 0.5px;
       }
     }
@@ -605,13 +604,13 @@ ul {
     // SEE ALL THE RELEASES
     &__seeReleases {
       width: 100%;
-      margin: 5rem 0;
+      margin: 2.5rem 0 4rem 0;
       button {
         width: 100%;
         padding: 0.9rem 0;
         background-color: #d6b64c00;
         background-image: url(../../Assets/images/botão_todoslançamentos.png);
-        background-position: center;
+        background-position: -50px;
         background-repeat: no-repeat;
         background-size: cover;
         border: none;
@@ -652,7 +651,7 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 75%;
 
         h2 {
           color: #d6b54c;
@@ -686,16 +685,19 @@ ul {
     // BLOG POSTS
     &__blogContainer {
       background-color: rgb(255, 255, 255);
-      padding: 5rem 0;
+      padding: 4rem 0 2rem 0;
     }
 
     // NEWS CARD
     &__newsCard {
+      width: 95%;
+      margin: 0 auto;
       margin-bottom: 3rem;
+
       h2 {
         color: #960039;
         font-weight: 400;
-        max-width: 130px;
+        max-width: 200px;
         font-size: 2rem;
       }
 
@@ -704,7 +706,7 @@ ul {
         letter-spacing: 0.5px;
         background-color: rgba(255, 0, 0, 0);
         background-image: url(../../Assets/images/botão_todasnoticias.png);
-        background-position: center;
+        background-position: -20px;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5px;
@@ -718,11 +720,17 @@ ul {
           font-size: 1.3rem;
           text-align: justify;
           letter-spacing: 0.3px;
+          max-width: 450px;
         }
       }
     }
 
     // BLOG CARDS
+
+    &__flexBlogCards {
+      display: flex;
+    }
+
     &__blogCard {
       background-color: #e5e5e5;
       position: relative;
@@ -739,7 +747,7 @@ ul {
         color: #ffffff;
         background-color: #d6b64c00;
         background-image: url(../../Assets/images/botão_todasnoticias.png);
-        background-position: center;
+        background-position: -80px;
         background-repeat: no-repeat;
         background-size: cover;
         border: none;
@@ -750,22 +758,18 @@ ul {
       }
     }
 
-    &__secondCard {
-      margin-bottom: 2rem;
-    }
-
-    // &__blogCard:first-child {
-    //   // margin-right: 1rem;
-    // }
-
-    &__blogCardImg{
-      img{
+    &__blogCardImg {
+      img {
         border-radius: 5px 5px 0 0;
       }
     }
 
+    &__blogCard:first-child {
+      margin-right: 1rem;
+    }
+
     &__blogCardInfo {
-      padding: 2rem;
+      padding: 1.5rem;
 
       .line {
         background-color: #990a41;
@@ -785,10 +789,10 @@ ul {
       }
     }
 
-    // Meet our partners
+    // MEET OUR PARTNERS
     &__partnersContainer {
       padding: 4rem 0;
-      height: 280px;
+      height: 320px;
     }
 
     &__partnersGrid {
@@ -811,7 +815,7 @@ ul {
       width: 80%;
       position: relative;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       .hidden {
         display: none;
       }
@@ -823,10 +827,12 @@ ul {
         height: 90px;
         border-radius: 5px;
         padding: 3rem 2rem;
+        margin-right: 2rem;
       }
 
-      .space {
-        margin-right: 1rem;
+      .tablet {
+        display: block;
+        margin-right: 0;
       }
     }
 
@@ -836,7 +842,7 @@ ul {
       height: 25px;
       background-color: #dfaf1300;
       position: relative;
-      right: 20px;
+      right: 10px;
       top: 30px;
       display: flex;
       align-items: center;
@@ -844,14 +850,13 @@ ul {
     }
 
     &__slideArrow:first-child {
-      left: 20px;
+      left: 10px;
     }
 
     // SIGN IN THE NEWSLETTER
     &__newsLetterGrid {
-      position: absolute;
+      position: relative;
       top: -90px;
-      left: 18px;
       margin: 0 auto;
     }
 
@@ -923,14 +928,14 @@ ul {
     }
 
     &__footerGrid {
-      padding: 15rem 0 0 0;
+      margin-top: -2rem;
     }
 
     &__footerWrraper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
 
       .enterprise {
         border-top: .5px solid #dfaf13b2;
@@ -940,15 +945,19 @@ ul {
 
     // CARDS
     &__footerCards {
-      padding: 1.5rem;
+      padding: 1rem 0;
       width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       h3 {
+        font-size: 1.3rem;
         margin-bottom: 1rem;
       }
       p {
         color: rgb(211, 211, 211);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.8rem;
       }
 
@@ -957,7 +966,7 @@ ul {
       }
 
       .bnsLogoFooter {
-        width: 80%;
+        width: 250px;
         text-align: center;
       }
 
@@ -994,10 +1003,11 @@ ul {
     &__blackLogo {
       width: 50%;
       display: flex;
+      justify-content: center;
       p {
-        width: 50%;
         font-weight: bold;
         font-size: 1rem;
+        margin-right: 1rem;
       }
 
       img {
@@ -1008,10 +1018,10 @@ ul {
 
     &__toTopArrow {
       position: absolute;
-      left: 260px;
+      right: 20px;
       top: -15px;
 
-      img{
+      img {
         width: 40px;
       }
     }
