@@ -257,7 +257,7 @@ ul {
 
     &__mainBanner {
       margin-top: 6rem;
-      background-image: url(./Assets/images/banner2.png);
+      background-image: url(../../Assets/images/banner2.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -291,7 +291,7 @@ ul {
         padding: 1rem;
         width: 80%;
         background-color: #3d3d3d00;
-        background-image: url(Assets/images/botão_banner.png);
+        background-image: url(../../Assets/images/botão_banner.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -308,7 +308,7 @@ ul {
     // FIND YOUR VEHICLE
     &__findVehicle {
       border-radius: 5px;
-      background-image: url(../../Assets/images/botão_buscaimóveis.png);
+      background-image: url(../../Assets/images/banner_busca.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -417,7 +417,7 @@ ul {
       border-radius: 5px;
       border: none;
       background-color: rgba(255, 0, 0, 0);
-      background-image: url(/Assets/images/botão_buscaimóveis.png);
+      background-image: url(../../Assets/images/botão_buscaimóveis.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -566,7 +566,7 @@ ul {
 
       button {
         width: 100%;
-        background-image: url(/Assets/images/botão_consultar.png);
+        background-image: url(../../Assets/images/botão_consultar.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -589,7 +589,7 @@ ul {
         width: 100%;
         padding: 0.9rem 0;
         background-color: #d6b64c00;
-        background-image: url(/Assets/images/botão_todoslançamentos.png);
+        background-image: url(../../Assets/images/botão_todoslançamentos.png);
         background-position: -50px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -609,7 +609,7 @@ ul {
 
     // CALL TO ACTION
     &__callAction {
-      background-image: url(/Assets/images/administration.webp);
+      background-image: url(../../Assets/images/administration.webp);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -651,7 +651,7 @@ ul {
           padding: 0.5rem 2rem;
           letter-spacing: 0.5px;
           background-color: #d6b64c00;
-          background-image: url(/Assets/images/botão_painellocação.png);
+          background-image: url(../../Assets/images/botão_painellocação.png);
           background-position: -35px;
           background-repeat: no-repeat;
           background-size: cover;
@@ -682,7 +682,7 @@ ul {
         padding: 0.5rem 2rem;
         letter-spacing: 0.5px;
         background-color: rgba(255, 0, 0, 0);
-        background-image: url(/Assets/images/botão_todasnoticias.png);
+        background-image: url(../../Assets/images/botão_todasnoticias.png);
         background-position: -20px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -717,7 +717,7 @@ ul {
         letter-spacing: 0.5px;
         color: #ffffff;
         background-color: #d6b64c00;
-        background-image: url(/Assets/images/botão_todasnoticias.png);
+        background-image: url(../../Assets/images/botão_todasnoticias.png);
         background-position: -80px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -831,7 +831,7 @@ ul {
     &__newsLetterContainer {
       border-radius: 5px;
       background-color: #960039;
-      background-image: url(/Assets/images/banner_newsletter.png);
+      background-image: url(../../Assets/images/banner_newsletter.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -880,7 +880,7 @@ ul {
           border-radius: 3px;
           border: none;
           background-color: #d6b64c00;
-          background-image: url(/Assets/images/botão_todasnoticias.png);
+          background-image: url(../../Assets/images/botão_todasnoticias.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
