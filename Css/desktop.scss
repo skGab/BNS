@@ -1,7 +1,7 @@
 // MOBILE FIRST
 @media screen and (min-width: 876px) {
   html {
-    font-size: 90.5%;
+    font-size: 85.5%;
   }
 
   .home {
@@ -315,6 +315,7 @@
         outline: none;
         border: none;
         font-size: 1.3rem;
+        cursor: pointer;
       }
     }
 
@@ -352,7 +353,6 @@
         margin-bottom: 2rem;
         font-weight: lighter;
       }
-
     }
 
     // PROPERTIES TYPES
@@ -385,6 +385,7 @@
       div:hover {
         background-color: #70042d;
         box-shadow: 1px 2px 4px black;
+        cursor: pointer;
       }
 
       div:hover > strong {
@@ -434,7 +435,7 @@
     &__findProperties {
       margin-top: 1.7rem;
       display: flex;
-      padding: 0.8rem;
+      padding: 0.8rem 2rem;
       font-size: 1.2rem;
       height: min-content;
       color: rgb(255, 255, 255);
@@ -444,9 +445,10 @@
       border: none;
       background-color: rgba(255, 0, 0, 0);
       background-image: url(../../Assets/images/botão_buscaimóveis.png);
-      background-position: -50px;
+      background-position: -20px;
       background-repeat: no-repeat;
       background-size: cover;
+      cursor: pointer;
 
       img {
         width: 20px;
@@ -464,6 +466,7 @@
       div {
         display: flex;
         flex-direction: column;
+        cursor: pointer;
       }
 
       .bloks {
@@ -630,6 +633,7 @@
         color: #ffffff;
         font-size: 1.2rem;
         letter-spacing: 0.5px;
+        cursor: pointer;
       }
     }
 
@@ -652,6 +656,7 @@
         color: #f3f3f3;
         margin: 0 2rem;
         font-size: 1.2rem;
+        cursor: pointer;
       }
 
       .line {
@@ -686,7 +691,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 60%;
 
         h2 {
           color: #d6b54c;
@@ -700,6 +704,7 @@
           text-align: justify;
           margin: 2rem 0;
           font-size: 1.2rem;
+          max-width: 600px;
         }
 
         button {
@@ -714,6 +719,7 @@
           border: none;
           color: #f3f3f3;
           font-size: 1.3rem;
+          cursor: pointer;
         }
       }
     }
@@ -759,6 +765,7 @@
         border: none;
         color: #f3f3f3;
         font-size: 1.4rem;
+        cursor: pointer;
       }
 
       .news {
@@ -796,7 +803,7 @@
         color: #ffffff;
         background-color: #d6b64c00;
         background-image: url(../../Assets/images/botão_todasnoticias.png);
-        background-position: -80px;
+        background-position: -60px;
         background-repeat: no-repeat;
         background-size: cover;
         border: none;
@@ -805,6 +812,7 @@
         left: 15px;
         border-radius: 5px;
         font-size: 1.1rem;
+        cursor: pointer;
       }
     }
 
@@ -895,6 +903,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
 
     &__slideArrow:first-child {
@@ -965,9 +974,10 @@
           width: 40%;
           background-color: #d6b64c00;
           background-image: url(../../Assets/images/botão_todasnoticias.png);
-          background-position: center;
+          background-position: -120px;
           background-repeat: no-repeat;
           background-size: cover;
+          cursor: pointer;
         }
       }
     }
@@ -978,7 +988,6 @@
       background-color: rgb(53, 53, 53);
       color: white;
     }
-
 
     &__footerWrraper {
       display: flex;
@@ -1075,6 +1084,8 @@
       position: absolute;
       right: 50px;
       bottom: 35px;
+      cursor: pointer;
+      
 
       img {
         width: 50px;
