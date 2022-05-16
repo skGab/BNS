@@ -9,7 +9,6 @@ x::after {
 html {
   -webkit-tap-highlight-color: transparent;
   font-family: "Roboto", sans-serif;
-  
 }
 
 html,
@@ -68,10 +67,13 @@ ul {
       display: flex;
       background-color: #282828;
       align-items: center;
-      justify-content: space-evenly;
+
+      .space{
+        width: 100%;
+      }
 
       div {
-        width: 50px;
+        width: 40%;
         height: auto;
         color: white;
         display: flex;

@@ -1,7 +1,13 @@
-// MOBILE FIRST
 @media screen and (min-width: 876px) {
   html {
     font-size: 85.5%;
+  }
+
+  header {
+    width: 100wh;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #e5e5e5;
   }
 
   .home {
@@ -11,6 +17,78 @@
       width: 90%;
     }
 
+    // CONTACT
+    &__fixedNav {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+      position: fixed;
+      z-index: 4;
+      bottom: 20px;
+
+      .contactContainer {
+        img {
+          width: 80px;
+        }
+      }
+    }
+
+    &__navContainer {
+      background-color: #70042d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      border-radius: 50px;
+      margin: 0 auto;
+      position: relative;
+
+      ul {
+        display: flex;
+        text-align: center;
+        li {
+          margin-right: 2rem;
+          display: flex;
+          align-items: center;
+
+          a {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            img {
+              margin-right: 1rem;
+              width: 35px;
+            }
+
+            .size {
+              width: 45px;
+            }
+          }
+
+          .central {
+            flex-direction: column;
+          }
+        }
+
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+
+      div {
+        position: absolute;
+        right: 20px;
+
+        img {
+          width: 25px;
+        }
+      }
+    }
+
     // SOCIAL
     &__showMobile {
       display: none;
@@ -18,6 +96,8 @@
 
     &__contactAndSocial {
       display: flex;
+      margin: 0 auto;
+      background-color: #e5e5e5;
     }
 
     &__contact {
@@ -34,26 +114,25 @@
     }
 
     &__social {
-      padding-right: 5rem;
-      width: 45%;
+      width: 40%;
       display: flex;
       background-color: #282828;
-      align-items: center;
-      justify-content: space-around;
+      justify-content: center;
 
       .space {
         width: 100%;
+        padding: 1rem;
       }
 
       div {
-        width: 50px;
+        width: 65%;
         height: auto;
+        padding: 0.8rem 0;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-right: 1px solid rgb(78, 78, 78);
-        padding: 1rem 2.5rem;
+        border-right: 1px solid rgba(78, 78, 78, 0.404);
 
         img {
           width: 20px;
@@ -94,10 +173,11 @@
         max-width: 650px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
         li {
           a {
+            font-size: 1.2rem;
             width: fit-content;
             display: flex;
             align-items: center;
@@ -476,11 +556,12 @@
     // NAV FILTER
     &__navFilter {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       margin: -5rem auto 3rem auto;
       width: 72%;
 
       div {
+        width: 100%;
         display: flex;
         flex-direction: column;
         cursor: pointer;
@@ -670,7 +751,7 @@
         padding: 0.9rem 0;
         background-color: #d6b64c00;
         background-image: url(../../Assets/images/botão_todoslançamentos.png);
-        background-position: -30px;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border: none;
