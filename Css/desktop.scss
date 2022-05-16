@@ -108,6 +108,12 @@
               margin-right: 10px;
             }
           }
+
+          a:hover {
+            color: #d6b54c;
+            font-weight: bold;
+            transition: 0.3s ease-in;
+          }
         }
       }
     }
@@ -309,13 +315,18 @@
         width: 50%;
         background-color: #3d3d3d00;
         background-image: url(../../Assets/images/botão_banner.png);
-        background-position: -50px;
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         outline: none;
         border: none;
         font-size: 1.3rem;
         cursor: pointer;
+      }
+
+      button:hover {
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.774);
+        transition: 0.3s ease-in-out;
       }
     }
 
@@ -384,8 +395,9 @@
 
       div:hover {
         background-color: #70042d;
-        box-shadow: 1px 2px 4px black;
         cursor: pointer;
+        box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.774);
+        transition: all 0.3s ease-in-out;
       }
 
       div:hover > strong {
@@ -456,6 +468,11 @@
       }
     }
 
+    &__findProperties:hover {
+      box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.774);
+      transition: all 0.3s ease-in-out;
+    }
+
     // NAV FILTER
     &__navFilter {
       display: flex;
@@ -505,7 +522,8 @@
         // PLACES HOVER CONFIGS
         .place:hover {
           background-color: #96003a;
-          box-shadow: 1px 2px 4px black;
+          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.774);
+          transition: all 0.3s ease-in-out;
         }
 
         .place::after {
@@ -546,7 +564,6 @@
     }
 
     // PLACES CONTAINER
-
     &__placesContainer {
       .left {
         display: flex;
@@ -635,6 +652,11 @@
         letter-spacing: 0.5px;
         cursor: pointer;
       }
+
+      button:hover {
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.774);
+        transition: 0.3s ease-in-out;
+      }
     }
 
     // SEE ALL THE RELEASES
@@ -657,6 +679,11 @@
         margin: 0 2rem;
         font-size: 1.2rem;
         cursor: pointer;
+      }
+
+      button:hover {
+        box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.774);
+        transition: 0.3s ease-in-out;
       }
 
       .line {
@@ -721,6 +748,11 @@
           font-size: 1.3rem;
           cursor: pointer;
         }
+
+        button:hover {
+          box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.774);
+          transition: 0.3s ease-in-out;
+        }
       }
     }
 
@@ -758,7 +790,7 @@
         letter-spacing: 0.5px;
         background-color: rgba(255, 0, 0, 0);
         background-image: url(../../Assets/images/botão_todasnoticias.png);
-        background-position: -65px;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5px;
@@ -766,6 +798,11 @@
         color: #f3f3f3;
         font-size: 1.4rem;
         cursor: pointer;
+      }
+
+      .newsButton:hover {
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.774);
+        transition: 0.3s ease-in-out;
       }
 
       .news {
@@ -813,6 +850,11 @@
         border-radius: 5px;
         font-size: 1.1rem;
         cursor: pointer;
+      }
+
+      button:hover {
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.774);
+        transition: 0.3s ease-in-out;
       }
     }
 
@@ -899,11 +941,17 @@
       background-color: #dfaf1300;
       position: relative;
       right: 10px;
-      top: 5px;
+      top: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      height: fit-content;
+    }
+
+    &__slideArrow:hover {
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.774);
+      transition: 0.3s ease-in-out;
     }
 
     &__slideArrow:first-child {
@@ -978,6 +1026,11 @@
           background-repeat: no-repeat;
           background-size: cover;
           cursor: pointer;
+        }
+
+        button:hover {
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.774);
+          transition: 0.3s ease-in-out;
         }
       }
     }
@@ -1085,11 +1138,15 @@
       right: 50px;
       bottom: 35px;
       cursor: pointer;
-      
 
       img {
         width: 50px;
       }
+    }
+
+    &__toTopArrow:hover {
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.774);
+      transition: 0.3s ease-in-out;
     }
   }
 }

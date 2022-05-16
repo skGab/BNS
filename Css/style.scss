@@ -9,6 +9,7 @@ x::after {
 html {
   -webkit-tap-highlight-color: transparent;
   font-family: "Roboto", sans-serif;
+  
 }
 
 html,
@@ -17,6 +18,7 @@ body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   background-color: #e5e5e5;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -34,8 +36,7 @@ ul {
 
 // MOBILE FIRST
 @media screen and (max-width: 550px) {
-
-  html{
+  html {
     font-size: 62.5%;
   }
 
@@ -50,7 +51,7 @@ ul {
       display: none;
     }
 
-    .showMobile{
+    .showMobile {
       display: block;
     }
 
@@ -440,11 +441,10 @@ ul {
       justify-content: center;
       cursor: pointer;
 
-      img{
+      img {
         width: 25px;
         margin-left: 1rem;
       }
-      
     }
 
     // NAV FILTER
@@ -767,8 +767,8 @@ ul {
     //   // margin-right: 1rem;
     // }
 
-    &__blogCardImg{
-      img{
+    &__blogCardImg {
+      img {
         border-radius: 5px 5px 0 0;
       }
     }
@@ -944,8 +944,8 @@ ul {
       margin-bottom: 2rem;
 
       .enterprise {
-        border-top: .5px solid #dfaf13b2;
-        border-bottom: .5px solid #dfaf13c0;
+        border-top: 0.5px solid #dfaf13b2;
+        border-bottom: 0.5px solid #dfaf13c0;
       }
     }
 
@@ -1022,7 +1022,7 @@ ul {
       right: 20px;
       top: -15px;
 
-      img{
+      img {
         width: 40px;
       }
     }
