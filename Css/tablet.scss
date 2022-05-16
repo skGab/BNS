@@ -304,6 +304,7 @@
         background-repeat: no-repeat;
         outline: none;
         border: none;
+        cursor: pointer;
       }
     }
 
@@ -371,6 +372,7 @@
       div:hover {
         background-color: #70042d;
         box-shadow: 1px 2px 4px black;
+        cursor: pointer;
       }
 
       div:hover > strong {
@@ -431,6 +433,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
 
       img{
         width: 30px;
@@ -448,6 +451,7 @@
       div {
         display: flex;
         flex-direction: column;
+        cursor: pointer;
       }
 
       .bloks {
@@ -598,6 +602,7 @@
         color: #ffffff;
         font-size: 1.2rem;
         letter-spacing: 0.5px;
+        cursor: pointer;
       }
     }
 
@@ -617,6 +622,8 @@
         border-radius: 5px;
         color: #f3f3f3;
         margin: 1rem 0;
+        cursor: pointer;
+        font-size: 1.3rem;
       }
 
       .line {
@@ -668,16 +675,18 @@
         }
 
         button {
-          padding: 0.5rem 2rem;
+          padding: 0.5rem 2.5rem;
           letter-spacing: 0.5px;
           background-color: #d6b64c00;
           background-image: url(../../Assets/images/botão_painellocação.png);
-          background-position: -35px;
+          background-position: -20px;
           background-repeat: no-repeat;
           background-size: cover;
           border-radius: 5px;
           border: none;
           color: #f3f3f3;
+          cursor: pointer;
+          font-size: 1.3rem;
         }
       }
     }
@@ -712,6 +721,7 @@
         border-radius: 5px;
         border: none;
         color: #f3f3f3;
+        cursor: pointer;
       }
 
       .news {
@@ -755,6 +765,7 @@
         bottom: -15px;
         left: 15px;
         border-radius: 5px;
+        cursor: pointer;
       }
     }
 
@@ -847,6 +858,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
     }
 
     &__slideArrow:first-child {
@@ -916,6 +928,7 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
+          cursor: pointer;
         }
       }
     }
