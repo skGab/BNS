@@ -40,8 +40,8 @@ ul {
   }
 
   button:hover {
-    transition: all 0.3s ease-in-out;
-    box-shadow: 1px 2px 6px black;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+    transition: 0.3s ease-in-out;
   }
 
   .home {
@@ -68,6 +68,11 @@ ul {
         img {
           width: 70px;
         }
+      }
+
+      .contactContainer:hover {
+        filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+        transition: 0.3s ease-in-out;
       }
     }
 
@@ -97,7 +102,7 @@ ul {
             align-items: center;
             letter-spacing: 0.8px;
             img {
-              margin-right: .7rem;
+              margin-right: 0.7rem;
               width: 25px;
             }
 
@@ -127,8 +132,9 @@ ul {
         }
       }
     }
+    // END CONTACT NAV
 
-    // SOCIAL
+    // HEADER
     &__showTablet {
       display: none;
     }
@@ -347,6 +353,7 @@ ul {
         color: orange;
       }
     }
+    // END HEADER
 
     // MAIN BANNER
     &__wrraper {
@@ -398,11 +405,7 @@ ul {
         cursor: pointer;
       }
     }
-
-    // CARD PLACES
-    &__cardPlaces {
-      position: relative;
-    }
+    // END MAIN BANNER
 
     // FIND YOUR VEHICLE
     &__findVehicle {
@@ -581,8 +584,8 @@ ul {
         // PLACES HOVER CONFIGS
         .place:hover {
           background-color: #96003a;
-          transition: all 0.3s ease-in-out;
-          box-shadow: 1px 2px 6px black;
+          filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+          transition: 0.3s ease-in-out;
         }
 
         .place::after {
@@ -619,6 +622,10 @@ ul {
     }
 
     // PLACES CONTAINER
+    &__cardPlaces {
+      position: relative;
+    }
+
     &__card {
       width: 90%;
       border-radius: 10px;
@@ -730,7 +737,7 @@ ul {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 3rem 0;
+      padding: 3rem 1rem;
       position: relative;
 
       .background {
@@ -762,7 +769,7 @@ ul {
         }
 
         button {
-          padding: 0.5rem 2rem;
+          padding: 0.5rem 3rem;
           letter-spacing: 0.5px;
           background-color: #d6b64c00;
           background-image: url(../../Assets/images/botão_painellocação.png);
@@ -944,6 +951,11 @@ ul {
       left: 10px;
     }
 
+    &__slideArrow:hover {
+      filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+      transition: 0.3s ease-in-out;
+    }
+
     // SIGN IN THE NEWSLETTER
     &__newsLetterGrid {
       position: absolute;
@@ -1112,6 +1124,11 @@ ul {
       img {
         width: 40px;
       }
+    }
+
+    &__toTopArrow:hover {
+      filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+      transition: 0.3s ease-in-out;
     }
   }
 
