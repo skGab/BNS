@@ -39,10 +39,93 @@ ul {
     font-size: 62.5%;
   }
 
+  button:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 1px 2px 6px black;
+  }
+
   .home {
     &__grid {
       margin: 0 auto;
       width: 90%;
+    }
+
+    // CONTACT NAV
+    &__fixedNav {
+      max-width: 1400px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 4;
+      bottom: 50px;
+      right: 0;
+
+      .contactContainer {
+        cursor: pointer;
+        position: relative;
+        right: 20px;
+        img {
+          width: 70px;
+        }
+      }
+    }
+
+    &__navContainer {
+      background-color: #70042d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 0%;
+      border-radius: 50px;
+      margin: 0 auto;
+      position: relative;
+      visibility: hidden;
+      padding: 2rem;
+
+      ul {
+        display: flex;
+        text-align: center;
+        li {
+          margin-right: 1rem;
+          display: flex;
+          align-items: center;
+
+          a {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.8px;
+            img {
+              margin-right: .7rem;
+              width: 25px;
+            }
+
+            .size {
+              width: 35px;
+            }
+          }
+
+          .central {
+            flex-direction: column;
+          }
+        }
+
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+
+      div {
+        position: absolute;
+        right: 30px;
+        top: 8px;
+        cursor: pointer;
+
+        img {
+          width: 15px;
+        }
+      }
     }
 
     // SOCIAL
@@ -68,7 +151,7 @@ ul {
       background-color: #282828;
       align-items: center;
 
-      .space{
+      .space {
         width: 100%;
       }
 
@@ -379,8 +462,9 @@ ul {
 
       div:hover {
         background-color: #70042d;
-        box-shadow: 1px 2px 4px black;
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 1px 2px 6px black;
       }
 
       div:hover > strong {
@@ -427,7 +511,7 @@ ul {
     // FIND PROPERTIES ----
     &__findProperties {
       padding: 1rem;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: rgb(255, 255, 255);
       letter-spacing: 0.3px;
       font-weight: 400;
@@ -444,7 +528,7 @@ ul {
       cursor: pointer;
 
       img {
-        width: 25px;
+        width: 20px;
         margin-left: 1rem;
       }
     }
@@ -497,7 +581,8 @@ ul {
         // PLACES HOVER CONFIGS
         .place:hover {
           background-color: #96003a;
-          box-shadow: 1px 2px 4px black;
+          transition: all 0.3s ease-in-out;
+          box-shadow: 1px 2px 6px black;
         }
 
         .place::after {
@@ -681,7 +766,7 @@ ul {
           letter-spacing: 0.5px;
           background-color: #d6b64c00;
           background-image: url(../../Assets/images/botão_painellocação.png);
-          background-position: -35px;
+          background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
           border-radius: 5px;
@@ -847,7 +932,7 @@ ul {
       height: 25px;
       background-color: #dfaf1300;
       position: relative;
-      right: 20px;
+      right: 10px;
       top: 30px;
       display: flex;
       align-items: center;
@@ -856,7 +941,7 @@ ul {
     }
 
     &__slideArrow:first-child {
-      left: 20px;
+      left: 10px;
     }
 
     // SIGN IN THE NEWSLETTER
@@ -1028,5 +1113,12 @@ ul {
         width: 40px;
       }
     }
+  }
+
+  // JS CLASS
+  .display {
+    width: 100%;
+    visibility: visible;
+    transition: 0.5s ease-in-out;
   }
 }

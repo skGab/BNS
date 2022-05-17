@@ -21,14 +21,16 @@
     &__fixedNav {
       max-width: 1400px;
       width: 100%;
-      margin: 0 auto;
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
       position: fixed;
       z-index: 4;
-      bottom: 20px;
+      bottom: 60px;
+      right: 90px;
 
       .contactContainer {
+        cursor: pointer;
         img {
           width: 80px;
         }
@@ -40,10 +42,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 80%;
+      width: 0%;
       border-radius: 50px;
       margin: 0 auto;
       position: relative;
+      visibility: hidden;
+      padding: 1rem;
 
       ul {
         display: flex;
@@ -82,6 +86,7 @@
       div {
         position: absolute;
         right: 20px;
+        cursor: pointer;
 
         img {
           width: 25px;
@@ -820,7 +825,7 @@
           letter-spacing: 0.5px;
           background-color: #d6b64c00;
           background-image: url(../../Assets/images/botão_painellocação.png);
-          background-position: -35px;
+          background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
           border-radius: 5px;
@@ -1229,5 +1234,12 @@
       box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.774);
       transition: 0.3s ease-in-out;
     }
+  }
+
+  // JS CLASS
+  .display {
+    width: 80%;
+    visibility: visible;
+    transition: 0.5s ease-in-out;
   }
 }

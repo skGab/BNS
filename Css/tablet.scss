@@ -15,6 +15,84 @@
       width: 90%;
     }
 
+    // CONTACT
+    &__fixedNav {
+      max-width: 1400px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 4;
+      bottom: 20px;
+      right: 0px;
+
+      .contactContainer {
+        cursor: pointer;
+        position: relative;
+        right: 20px;
+        bottom: 50px;
+        img {
+          width: 70px;
+        }
+      }
+    }
+
+    &__navContainer {
+      background-color: #70042d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 0%;
+      border-radius: 50px;
+      margin: 0 auto;
+      position: relative;
+      visibility: hidden;
+      padding: 1rem 0;
+
+      ul {
+        display: flex;
+        text-align: center;
+        li {
+          margin-right: 1rem;
+          display: flex;
+          align-items: center;
+
+          a {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.8px;
+            img {
+              margin-right: 0.5rem;
+              width: 35px;
+            }
+
+            .size {
+              width: 45px;
+            }
+          }
+
+          .central {
+            flex-direction: column;
+          }
+        }
+
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+
+      div {
+        position: absolute;
+        right: 25px;
+        cursor: pointer;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+
     // SOCIAL
     &__showMobile {
       display: none;
@@ -696,7 +774,7 @@
           letter-spacing: 0.5px;
           background-color: #d6b64c00;
           background-image: url(../../Assets/images/botão_painellocação.png);
-          background-position: -20px;
+          background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
           border-radius: 5px;
@@ -1064,5 +1142,12 @@
       transition: all 0.3s ease-in-out;
       box-shadow: 1px 2px 6px black;
     }
+  }
+
+  // JS CLASS
+  .display {
+    width: 100%;
+    visibility: visible;
+    transition: 0.5s ease-in-out;
   }
 }
