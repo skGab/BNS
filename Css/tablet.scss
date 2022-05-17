@@ -1,12 +1,14 @@
 @media screen and (max-width: 875px) and (min-width: 551px) {
+  // PUBLIC CONFIGS
   html {
     font-size: 75.5%;
   }
 
   button:hover {
-    transition: all 0.3s ease-in-out;
-    box-shadow: 1px 2px 6px black;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+    transition: 0.3s ease-in-out;
   }
+  // END PUBLIC CONFIGS
 
   .home {
     &__grid {
@@ -34,6 +36,11 @@
         img {
           width: 70px;
         }
+      }
+
+      .contactContainer:hover {
+        filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+        transition: 0.3s ease-in-out;
       }
     }
 
@@ -92,8 +99,9 @@
         }
       }
     }
+    // END CONTACT
 
-    // SOCIAL
+    // HEADER
     &__showMobile {
       display: none;
     }
@@ -145,7 +153,6 @@
       }
     }
 
-    // NAV
     &__logo {
       width: 40%;
       background-color: white;
@@ -344,6 +351,7 @@
         color: orange;
       }
     }
+    // END HEADER
 
     // MAIN BANNER
     &__wrraper {
@@ -383,30 +391,24 @@
       button {
         color: #ffffff;
         border-radius: 5px;
-        padding: 1rem;
-        width: 80%;
+        padding: 1rem 3rem;
         background-color: #3d3d3d00;
         background-image: url(../../Assets/images/botão_banner.png);
-        background-position: center;
+        background-position: -30px;
         background-size: cover;
         background-repeat: no-repeat;
         outline: none;
         border: none;
         cursor: pointer;
       }
-
-      button:hover {
-        transition: all 0.3s ease-in-out;
-        box-shadow: 1px 2px 6px black;
-      }
     }
+    // END MAIN BANNER
 
-    // CARD PLACES
+    // FIND YOUR VEHICLE
     &__cardPlaces {
       position: relative;
     }
 
-    // FIND YOUR VEHICLE
     &__findVehicle {
       border-radius: 5px;
       background-image: url(../../Assets/images/banner_busca.png);
@@ -435,7 +437,6 @@
       }
     }
 
-    // PROPERTIES TYPES
     &__propertiesTypes {
       margin-bottom: 1.5rem;
 
@@ -451,7 +452,6 @@
       }
     }
 
-    // PROPERTIES TYPES ----
     &__flexInputs {
       display: flex;
 
@@ -489,7 +489,6 @@
       }
     }
 
-    // WHERE ----
     &__where {
       margin-bottom: 3rem;
 
@@ -510,10 +509,9 @@
       }
     }
 
-    // FIND PROPERTIES ----
     &__findProperties {
       padding: 1rem;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: rgb(255, 255, 255);
       letter-spacing: 0.3px;
       font-weight: 400;
@@ -534,6 +532,7 @@
         margin-left: 1rem;
       }
     }
+    // END FIND YOUR VEHICLE
 
     // NAV FILTER
     &__navFilter {
@@ -584,8 +583,8 @@
         // PLACES HOVER CONFIGS
         .place:hover {
           background-color: #96003a;
-          box-shadow: 1px 2px 6px black;
-          transition: all 0.3s ease-in-out;
+          filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+          transition: 0.3s ease-in-out;
         }
 
         .place::after {
@@ -620,6 +619,7 @@
         }
       }
     }
+    // END NAV FILTER
 
     // PLACES CONTAINER
     &__placesContainer {
@@ -700,6 +700,7 @@
         cursor: pointer;
       }
     }
+    // END PLACES CONTAINER
 
     // SEE ALL THE RELEASES
     &__seeReleases {
@@ -728,6 +729,7 @@
         margin: 0 auto;
       }
     }
+    // END SEE ALL THE RELEASES
 
     // CALL TO ACTION
     &__callAction {
@@ -774,7 +776,7 @@
           letter-spacing: 0.5px;
           background-color: #d6b64c00;
           background-image: url(../../Assets/images/botão_painellocação.png);
-          background-position: center;
+          background-position: -20px;
           background-repeat: no-repeat;
           background-size: cover;
           border-radius: 5px;
@@ -785,6 +787,7 @@
         }
       }
     }
+    // END CALL TO ACTION
 
     // BLOG POSTS
     &__blogContainer {
@@ -792,7 +795,6 @@
       padding: 4rem 0 2rem 0;
     }
 
-    // NEWS CARD
     &__newsCard {
       width: 95%;
       margin: 0 auto;
@@ -810,7 +812,7 @@
         letter-spacing: 0.5px;
         background-color: rgba(255, 0, 0, 0);
         background-image: url(../../Assets/images/botão_todasnoticias.png);
-        background-position: center;
+        background-position: -15px;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 5px;
@@ -830,7 +832,6 @@
       }
     }
 
-    // BLOG CARDS
     &__flexBlogCards {
       display: flex;
     }
@@ -851,13 +852,13 @@
         color: #ffffff;
         background-color: #d6b64c00;
         background-image: url(../../Assets/images/botão_todasnoticias.png);
-        background-position: -80px;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         border: none;
         position: absolute;
         bottom: -15px;
-        left: 15px;
+        left: 18px;
         border-radius: 5px;
         cursor: pointer;
       }
@@ -893,6 +894,7 @@
         margin-bottom: 1.5rem;
       }
     }
+    // END BLOG POSTS
 
     // MEET OUR PARTNERS
     &__partnersContainer {
@@ -956,13 +958,14 @@
     }
 
     &__slideArrow:hover {
-      transition: all 0.3s ease-in-out;
-      box-shadow: 1px 2px 4px black;
+      filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+      transition: 0.3s ease-in-out;
     }
 
     &__slideArrow:first-child {
       left: 10px;
     }
+    // END MEET OUR PARTNERS
 
     // SIGN IN THE NEWSLETTER
     &__newsLetterGrid {
@@ -1031,6 +1034,7 @@
         }
       }
     }
+    // END SIGN IN THE NEWSLETTER
 
     // FOOTER
     &__footerContainer {
@@ -1139,9 +1143,10 @@
     }
 
     &__toTopArrow:hover {
-      transition: all 0.3s ease-in-out;
-      box-shadow: 1px 2px 6px black;
+      filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.932));
+      transition: 0.3s ease-in-out;
     }
+    // END FOOTER
   }
 
   // JS CLASS
