@@ -13,6 +13,9 @@
   // END PUBLIC CONFIGS
 
   .home {
+    &__container {
+      position: relative;
+    }
     &__grid {
       margin: 0 auto;
       max-width: 1400px;
@@ -24,14 +27,14 @@
       max-width: 1400px;
       width: 100%;
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
+      justify-content: flex-end;
       position: fixed;
       z-index: 4;
       bottom: 60px;
-      right: 90px;
 
       .contactContainer {
+        margin-right: 2rem;
         cursor: pointer;
         img {
           width: 80px;
@@ -54,7 +57,9 @@
       margin: 0 auto;
       position: relative;
       visibility: hidden;
+      opacity: 0;
       padding: 1rem;
+
 
       ul {
         display: flex;
@@ -1247,6 +1252,7 @@
   .display {
     width: 80%;
     visibility: visible;
-    transition: 0.5s ease-in-out;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
   }
 }
