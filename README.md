@@ -23,7 +23,7 @@
 <!-- DESCRIPTION -->
 <p align="center"> 
         💡 
-        Projeto base para estudo de Front-end com foco em responsividade HTML e CSS.
+        Este projeto é uma base para estudar front-end com ênfase em responsividade, HTML e Css, buscando melhorar habilidades e adotar práticas eficientes de desenvolvimento web.
   <br> 
 </p>
 
