@@ -33,9 +33,6 @@
 
 - [Tecnologias](#tecnologies)
 - [Introdução & O que o sistema deve fazer](#goal)
-- [Funcionalidades](#features)
-- [Requerimentos de qualidade](#quality)
-- [Instruções de Uso](#glossary)
 - [Autor](#authors)
 
 ## Tecnologias <a name="tecnologies"></a>
