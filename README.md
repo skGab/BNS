@@ -1,5 +1,5 @@
 <!-- TITLE -->
-<h1 align="center" color="black"><a href="https://zdeep10.github.io/BNS/" target="_blank">BNS Ímoveis</a></h1>
+<h1 align="center" color="black"><a href="https://zdeep10.github.io/BNS/" target="_blank">Bns Imóveis</a></h1>
 
 <!-- THUMB -->
 <p align="center">
