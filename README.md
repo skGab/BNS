@@ -1,9 +1,9 @@
 <!-- TITLE -->
-<h1 align="center" color="black"><a href="https://zdeep10.github.io/BNS/" target="_blank">Bns Imóveis</a></h1>
+<h1 align="center" color="black"><a href="https://skgab.github.io/BNS/" target="_blank">Bns Imóveis</a></h1>
 
 <!-- THUMB -->
 <p align="center">
-  <a href="https://zdeep10.github.io/BNS/" rel="noopener" target="_blank">
+  <a href="https://skgab.github.io/BNS/" rel="noopener" target="_blank">
         <img src="./Assets/images/doc_thumb.png" alt="Logo do Projeto" object-fit="cover">
   </a>
 </p>
